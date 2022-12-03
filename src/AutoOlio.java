@@ -5,7 +5,7 @@ public class AutoOlio {
 		
 		//Olion nimi
 		Auto auto1 = new Auto();
-		Auto auto2 = new Auto("Romu", "Lotjake", 12 );
+		Auto auto2 = new Auto("Romu", "Lotjake",12 );
 		
 		
 		//Attribuutit
@@ -34,8 +34,8 @@ class Auto {
 	
 	String merkki;
 	String malli;
-	int bensanMaara=10;
-	int bensanUusiMaara=0;
+	int bensanMaara;
+	int bensanUusiMaara;
 	
 	//oletusmuodostin
 	
@@ -48,7 +48,7 @@ class Auto {
 	public Auto (String merkinNimi, String mallinNimi, int bensanMaaraL) {
 		merkki=merkinNimi;
 		malli=mallinNimi;
-		bensanMaaraL=bensanMaara;
+		bensanMaara=bensanMaaraL;
 	}
 	
 //Jarruta metodi
