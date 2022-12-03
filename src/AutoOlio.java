@@ -6,7 +6,7 @@ public class AutoOlio {
 		
 		auto1.merkki= "Kottero";
 		auto1.merkki= "Sedan xyz";
-		auto1.bensanMaara= 10;
+		auto1.bensanMaara= 1;
 		
 		auto1.naytaTiedot();
 		auto1.kiihdyta();
@@ -21,7 +21,7 @@ class Auto {
 	
 	String merkki;
 	String malli;
-	int bensanMaara=10;
+	int bensanMaara=0;
 	
 //metodit
 	public void jarruta() {
@@ -29,6 +29,7 @@ class Auto {
 	}
 	
 	public void kiihdyta() {
+		if (bensanMaara >0)
 		System.out.println("Auto kiihtyy");
 		bensanMaara = (bensanMaara -1);
 	
