@@ -2,7 +2,15 @@
 public class AutoOlio {
 
 	public static void main(String[] args) {
+		Auto auto1 = new Auto();
 		
+		auto1.merkki= "Kottero";
+		auto1.merkki= "Sedan xyz";
+		auto1.bensanMaara= 10;
+		
+		auto1.naytaTiedot();
+		auto1.kiihdyta();
+		auto1.naytaTiedot();
 
 	}
 
@@ -23,6 +31,7 @@ class Auto {
 	public void kiihdyta() {
 		System.out.println("Auto kiihtyy");
 		bensanMaara = (bensanMaara -1);
+	
 	}
 	public void naytaTiedot() {
 		System.out.println("Merkki: " + merkki);
